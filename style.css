@@ -20,65 +20,7 @@ body::-webkit-scrollbar-thumb:hover{
 body::-webkit-scrollbar-track {
     background-color: #191919;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    background-color: #191919;
-    align-items: center;
-    width: 100%;
-}
 
-.header{
-    position: relative;
-    width: 100%;
-}
-
-.header .nav{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 46px 0;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-.header .nav .logo img{
-    width: 125px;
-    height: 40px;
-}
-.header .nav .right{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
-.header .nav .right .language{
-    width: 28px;
-    height: 28px;
-}
-.header .nav .right button{
-    background-color: #292929;
-    padding: 15.83px 14.67px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    border: 0;
-}
-.header .nav .right .menu{
-    height: 16px;
-    width: 19px;
-}
-
-.header .slides{
-    height: 720px;
-    width: 100%;
-    display: flex;
-}
-.header .slides .slide_item{
-    width: 100%;
-    position: relative;
-}
 .header .slides .slide_item::after{
     content: "";
     width: 100%;
@@ -88,21 +30,6 @@ body::-webkit-scrollbar-track {
     top: 0;
     left: 0;
 }
-.header .slides .slide_item>img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.header .slides .slide_item .information{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    position: absolute;
-    bottom: 50px;
-    left: 48px;
-    color: #D9D9D9;
-    z-index: 5;
-}
 .header .slides .slide_item .information .title{
     font-family: "Big Shoulders Stencil", sans-serif;
     font-weight: 700;
@@ -111,10 +38,6 @@ body::-webkit-scrollbar-track {
     letter-spacing: 0%;
     color: #ffffff;
 }
-.header .slides .slide_item .information .text{
-    display: flex;
-    gap: 12px;
-}
 .header .slides .slide_item .information .text p{
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
@@ -122,15 +45,6 @@ body::-webkit-scrollbar-track {
     line-height: 100%;
     letter-spacing: 0%;    
     max-width: 347px;
-}
-.header .slides .slide_item .information .text button{
-    background-color: transparent;
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
-    padding: 14.5px 28px;
-    transform: skew(-15deg);
-    transition: .2s;
-    cursor: pointer;
 }
 .header .slides .slide_item .information .text button:hover{
     background-color: #D9D9D9;
@@ -144,11 +58,6 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
     transition: .2s;
     font-weight: 500;
-}
-
-.header .slides .slide_item .information .slide_dots{
-    display: flex;
-    gap: 10px;
 }
 .header .slides .slide_item .information .slide_dots .dot{
     width: 12px;
@@ -173,12 +82,6 @@ body::-webkit-scrollbar-track {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-.header .slides .slide_item .fixed_text_wrapper{
-    position: absolute;
-    bottom: 50px;
-    right: 48px;
-}
 .header .slides .slide_item .fixed_text{
     position: relative;
     width: 382px;
@@ -199,11 +102,6 @@ body::-webkit-scrollbar-track {
     background-position: center;
     z-index: 3;
 }
-.header .slides .slide_item .fixed_text img{
-    width: 87px;
-    height: 87px;
-    transform: translate(-17px,-31px);
-}
 .header .slides .slide_item .fixed_text .phone_number{
     display: flex;
     align-items: center;
@@ -221,20 +119,6 @@ body::-webkit-scrollbar-track {
     bottom: 0;
     right: 5px;
     transform: translateY(65%);
-}
-.header .slides .slide_item .fixed_text .phone_number img{
-    width: 30px;
-    height: 30px;
-    transform: translate(0%,0%);
-    right: 4px;
-    position: absolute;
-}
-
-.header .reserve_btn_wrapper {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%,7px);
 }
 .header .reserve_btn_shadow {
     position: absolute;
@@ -269,12 +153,6 @@ body::-webkit-scrollbar-track {
     transform: scale(1.1);
 }
 
-.registration_and_about{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
 .registration_and_about::before{
     content: "";
     background-image: url("./images/Floating\ Logo.svg");
@@ -282,22 +160,10 @@ body::-webkit-scrollbar-track {
     height: 715.83px;
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     left: 67px;
     top: 341.44px;
-}
-.registration_and_about .registration{
-    padding: 100px 116px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    color: #D9D9D9;
-}
-.registration_and_about .registration .left{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 566px;
 }
 .registration_and_about .registration .left .title{
     font-family: "Big Shoulders", sans-serif;
@@ -313,12 +179,6 @@ body::-webkit-scrollbar-track {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
-}
-.registration_and_about .registration .right{
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    width: 634px;
 }
 .registration_and_about .registration .right .registration_step{
     height: 144px;
@@ -397,30 +257,6 @@ body::-webkit-scrollbar-track {
     width: 128px;
     height: 128px;
 }
-
-.registration_and_about .about{
-    padding: 0 116px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    color: #D9D9D9;
-}
-.registration_and_about .about .title{
-    padding-left: 233px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-}
-.registration_and_about .about .title .left{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    width: 578px;
-}
 .registration_and_about .about .title .left h1{
     font-family: "Big Shoulders", sans-serif;
     font-weight: 700;
@@ -451,47 +287,7 @@ body::-webkit-scrollbar-track {
     letter-spacing: 0%;
     color: #D9D9D9;
 }
-.registration_and_about .about .title .right img{
-    width: 24px;
-    height: 24px;
-}
 
-.registration_and_about .about .video{
-    width: 1280px;
-    height: 567px;
-    position: relative;
-}
-.registration_and_about .about .video img{
-    width: 100%;
-    height: 100%;
-    border-radius: 24px;
-}
-.registration_and_about .about .video button{
-    border: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: transparent;
-    cursor: pointer;
-}
-.registration_and_about .about .video button img{
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
-}
-
-.activities{
-    padding: 100px 116px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-}
-.activities .heading{
-    display: flex;
-    justify-content: space-between;
-    color: #D9D9D9;
-}
 .activities .heading h1{
     font-family: "Big Shoulders", sans-serif;
     font-weight: 700;
@@ -507,22 +303,6 @@ body::-webkit-scrollbar-track {
     display: flex;
     gap: 24px;
     align-items: center;
-}
-.activities .heading p img{
-    width: 32px;
-    height: 16px;
-}
-
-.activities .content{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.activities .content .tabs{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    color: #D9D9D9;
 }
 .activities .content .tabs .item{
     background-color: #D9D9D9;
@@ -608,7 +388,6 @@ body::-webkit-scrollbar-track {
     right: -50px;
     transform: skew(20deg);
 }
-
 .activities .image{
     width: 780px;
     height: 518px;
@@ -673,18 +452,6 @@ body::-webkit-scrollbar-track {
     background-image: url("./images/noise.png");
     opacity: 20%;
 }
-.gifting img{
-    width: 220px;
-    height: 220px;
-    z-index: 5;
-}
-.gifting .text{
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    gap: 2px;
-    z-index: 5;
-}
 .gifting .text h1{
     font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
@@ -720,24 +487,6 @@ body::-webkit-scrollbar-track {
     color: #D9D9D9;
 }
 
-.footer{
-    padding: 80px 116px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    color: #D9D9D9;
-    width: 100%;
-}
-.footer .top{
-    display: flex;
-    gap: 300px;
-    align-items: center;
-}
-.footer .top img{
-    width: 200px;
-    height: 95px;
-    object-fit: contain;
-}
 .footer .top p{
     width: 300px;
     font-family: "Space Grotesk", sans-serif;
@@ -745,32 +494,11 @@ body::-webkit-scrollbar-track {
     font-size: 14px;
     line-height: 150%;
 }
-.footer .top ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-end;
-}
 .footer .top ul li{
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-}
-
-.footer .bottom{
-    display: flex;
-    justify-content: space-between;
-}
-.footer .bottom .contact{
-    background-color: #292929;
-    display: flex;
-    border-radius: 30px;
-    padding: 4px 12px;
-    gap: 12px;
-    align-items: center;
-    height: fit-content;
 }
 .footer .bottom .contact a{
     width: 32px;
@@ -780,39 +508,14 @@ body::-webkit-scrollbar-track {
     width: 100%;
     height: 100%;
 }
-.footer .bottom .copyright_and_onTopBtn{
-    display: flex;
-    gap: 48px;
-    align-items: center;
-}
 .footer .bottom .copyright_and_onTopBtn p{
     font-family: "Space Grotesk", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
 }
-.footer .bottom .copyright_and_onTopBtn .button{
-    border: 0;
-    background-color: #292929;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .2s;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer .bottom .copyright_and_onTopBtn .button img{
-    width: 12px;
-    height: 6px;
-}
 .footer .bottom .copyright_and_onTopBtn .button:hover{
     background-color: #3d3d3d;
-}
-.footer .bottom .copyright_and_onTopBtn button img{
-    width: 12px;
-    height: 6px;
 }
 
 /* Animation Slider */
@@ -826,8 +529,164 @@ body::-webkit-scrollbar-track {
     transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
 
+@media (max-width: 1441px) {
+    body .container{
+        max-width: 1441px;
+    }
+    .container .activities{
+        padding: 100px 0;
+    }
+    .registration_and_about::before{
+        top: 260px;
+    }
+    .registration_and_about .registration{
+        padding: 0 50px;
+    }
+    .registration_and_about .about{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+    body .container{
+        max-width: 1025px;
+        gap: 0;
+    }
+    .header .slides{
+        height: 470px;
+    }
+    .header .slides .slide_item::after{
+        height: 470px;
+    }
+    .header .slides .slide_item .information{
+        bottom: 35px;
+        left: 24px;
+    }
+    .header .slides .slide_item .information .title{
+       font-size: 60px; 
+    }
+    .header .slides .slide_item .information .text{
+        flex-direction: column;
+    }
+    .header .slides .slide_item .information .text button{
+        width: fit-content;
+        padding: 10px 15px;
+    }
+    .header .slides .slide_item .information .text button p{
+        font-size: 12px;
+    }
+
+    .header .slides .slide_item .fixed_text_wrapper{
+        right: 24px;
+        bottom: 35px;
+    }
+    .header .slides .slide_item .fixed_text_shadow{
+        width: 150px;
+        height: 120px;
+    }
+    .header .slides .slide_item .fixed_text{
+        width: 330px;
+        height: 130px;
+    }
+    .header .slides .slide_item .fixed_text img{
+        width: 80px;
+        height: 70px;
+        transform: translate(-25%,-25%);
+    }
+    .header .slides .slide_item .fixed_text .phone_number{
+        width: 155px;
+        font-size: 15px;
+        padding: 7px 4px 7px 7px;
+        transform: translate(0%,3px);
+    }
+    .header .slides .slide_item .fixed_text .phone_number img{
+        width: 25px;
+        height: 25px;
+        transform: translate(0%);
+    }
+    .header .reserve_btn_wrapper{
+        transform: translate(-50%,22px);
+    }
+    .header .reserve_btn_shadow{
+        width: 180px;
+        height: 120px;
+        transform: translate(-50%, -37px);
+    }
+    .header .reserve_btn{
+        width: 190px;
+        height: 70px;
+    }
+    .container .activities{
+        padding: 100px 0;
+    }
+    .registration_and_about::before{
+        background-size: 80%;
+        left: 47px;
+        top: 340px;
+    }
+    .registration_and_about .registration{
+        padding: 100px 20px;
+    }
+    .registration_and_about .registration .left{
+        width: 40%;
+    }
+    .registration_and_about .registration .right{
+        width: 60%;
+    }
+    .registration_and_about .registration .right .registration_step .content{
+        width: 300px;
+    }
+    .registration_and_about .registration .right .registration_step .qr{
+        right: 18px;
+    }
+    .registration_and_about .about{
+        padding: 0;
+    }
+    .registration_and_about .about .video{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .activities .image{
+        width: 60%;
+        background-size: cover;
+        height: 450px;
+    }
+    .activities .content .tabs{
+        width: 40%;
+    }
+    .activities .content .tabs .item{
+        width: 100%;
+    }
+    .activities .content .tabs .item--active{
+        width: 100%;
+    }
+    .gifting{
+        width: 85%;
+    }
+    .gifting::after{
+        width: 100%;
+    }
+    .gifting>img{
+        width: 150px;
+        height: 150px;
+    }
+    .gifting .text h1{
+        font-size: 30px;
+    }
+    .gifting .text p{
+        font-size: 15px;
+    }
+    .container .footer{
+        padding: 80px 70px 40px;
+    }
+    .container .footer .top{
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 992px) {
-    .container{
+    body .container{
         max-width: 992px;
         gap: 50px;
     }
@@ -882,7 +741,6 @@ body::-webkit-scrollbar-track {
         width: 15px;
         height: 15px;
     }
-    
     .header .reserve_btn_wrapper{
         transform: translate(-50%,22px);
     }
@@ -895,9 +753,11 @@ body::-webkit-scrollbar-track {
         width: 140px;
         height: 50px;
     }
+
     .registration_and_about{
         justify-content: center;
         align-items: center;
+        gap: 0;
     }
     .registration_and_about::before{
         background: transparent;
@@ -905,6 +765,16 @@ body::-webkit-scrollbar-track {
     .registration_and_about .registration{
         flex-direction: column;
         padding: 100px 0;
+        align-items: center;
+    }
+    .registration_and_about .registration .left{
+        width: 566px;
+    }
+    .registration_and_about .registration .right{
+        width: 634px;
+    }
+    .registration_and_about .about{
+        padding: 0 50px;
     }
     .registration_and_about .about .title{
         padding-left: 0;
@@ -1030,8 +900,28 @@ body::-webkit-scrollbar-track {
     }
 }
 
+@media (max-width: 769px) {
+    body .container{
+        gap: 0;
+    }
+    .registration_and_about .about{
+        padding: 0 20px;
+    }
+    .container .footer{
+        padding: 100px 30px 40px;
+    }
+    .gifting .text h1{
+        width: 100%;
+        /* white-space: normal; */
+        font-size: 20px;
+    }
+    .activities .content{
+        gap: 0;
+    }
+}
+
 @media (max-width: 450px) {
-    .container{
+    body .container{
         max-width: 450px;
         gap: 50px;
     }
@@ -1142,6 +1032,7 @@ body::-webkit-scrollbar-track {
     .registration_and_about{
         justify-content: center;
         align-items: center;
+        gap: 100px;
     }
     .registration_and_about::before{
         background: transparent;
@@ -1238,7 +1129,7 @@ body::-webkit-scrollbar-track {
     }
     .registration_and_about .about .video{
         width: 90%;
-        height: 260px;
+        height: 230px;
     }
     .registration_and_about .about .video img{
         border-radius: 8px;
@@ -1248,7 +1139,7 @@ body::-webkit-scrollbar-track {
         height: 40px;
     }
 
-    .activities{
+    .container .activities{
         width: 100%;
         padding: 0;
         gap: 30px;
@@ -1321,6 +1212,8 @@ body::-webkit-scrollbar-track {
         width: 95%;
         height: 260px;
         background-size: cover;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
     }
     .activities .image p{
         width: 150px;
@@ -1372,7 +1265,7 @@ body::-webkit-scrollbar-track {
         border-radius: 5px;
     }
 
-    .footer{
+    .container .footer{
         padding: 0 20px 20px;
     }
     .footer .top{
@@ -1417,5 +1310,28 @@ body::-webkit-scrollbar-track {
     .footer .bottom .copyright_and_onTopBtn .button{
         width: 30px;
         height: 30px;
+    }
+}
+
+@media (max-width: 376px) {
+    .registration_and_about .registration .right .registration_step .content{
+        width: 240px;
+    }
+    .activities .image {
+        border-radius: 0px;
+    }
+    .activities .image button{
+        border-radius: 0;
+        padding: 10px;
+    }
+    .gifting .text h1{
+        font-size: 13px;
+    }
+    .gifting button{
+        transform: translate(7%, 105%);
+    }
+
+    .footer .bottom .copyright_and_onTopBtn p{
+        font-size: 8px;
     }
 }

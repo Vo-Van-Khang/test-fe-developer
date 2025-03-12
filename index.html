@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Test FE Developer</title>
+    <link rel="icon" type="image/png" href="./images/logo_company.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
+    <div class="container flex flex-col bg-[#191919] items-center w-full gap-[100px]">
+        <div class="header relative w-full">
+            <div class="nav fixed flex justify-between pt-5 px-[46px] w-full top-0 left-0 z-[100]">
                 <a href="" class="logo">
-                    <img src="./images/Logo.svg" alt="">
+                    <img src="./images/Logo.svg" alt="" class=" w-[125px] h-[40px]">
                 </a>
-                <div class="right">
-                    <img src="./images/language.png" alt="" class="language">
-                    <button>
-                        <img src="./images/menu.png" alt="" class="menu">
+                <div class="right flex items-center gap-8">
+                    <img src="./images/language.png" alt="" class="language h-[28px] w-[28px]">
+                    <button class="bg-[#292929] p-[15.83px] px-[14.67px] rounded-full flex items-center border-0">
+                        <img src="./images/menu.png" alt="" class="menu h-[16px] w-[19px]">
                     </button>
                 </div>
             </div>
 
-            <div class="slides">
-                <div class="slide_item">
-                    <img class="image_slider" index_slide="1" src="./images/slide1.jpg" alt="">
+            <div class="slides h-[720px] w-full flex">
+                <div class="slide_item w-full relative">
+                    <img class="image_slider h-full w-full object-cover" index_slide="1" src="./images/slide1.jpg" alt="">
 
-                    <div class="information">
+                    <div class="information flex flex-col gap-6 absolute bottom-[50px] left-[48px] text-[#D9D9D9] z-[5]">
                         <h1 class="title title_slider">GO-KARTS</h1>
-                        <div class="text">
+                        <div class="text flex gap-3">
                             <p class="content_slider">Enjoy an adrenaline ride in any weather. Outdoor track and indoor hall at a professional level with Sodi go-karts.</p>
-                            <button class="find_out_more_button">
+                            <button class="find_out_more_button bg-transparent border border-[#D9D9D9] rounded-lg p-[14.5px] px-[28px] transform skew-x-[-15deg] transition duration-200">
                                 <p>Find out more</p>
                             </button>
                         </div>
-                        <div class="slide_dots">
+                        <div class="slide_dots flex gap-[10px]">
                             <div class="dot active"></div>
                             <div class="dot"></div>
                             <div class="dot"></div>
@@ -44,29 +45,29 @@
                         </div>
                     </div>
 
-                    <div class="fixed_text_wrapper">
+                    <div class="fixed_text_wrapper absolute bottom-[50px] right-[48px]">
                         <div class="fixed_text_shadow"></div>
                         <div class="fixed_text">
-                            <img src="./images/caro_flag.png" alt="">
+                            <img class="w-[87px] h-[87px] transform translate-x-[-17px] translate-y-[-31px]" src="./images/caro_flag.png" alt="">
 
                             <div class="phone_number">
                                 <p>+420737878891</p>
-                                <img src="./images/phone.svg" alt="">
+                                <img src="./images/phone.svg" alt="" class="w-[30px] h-[30px] absolute right-[4px] translate-x-[0%] translate-y-[0%]">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="reserve_btn_wrapper">
+            <div class="reserve_btn_wrapper absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[7px]">
                 <div class="reserve_btn_shadow"></div>
                 <button class="reserve_btn"></button>
             </div>            
         </div>
 
-        <div class="registration_and_about">
-            <div class="registration">
-                <div class="left">
+        <div class="registration_and_about relative flex flex-col gap-[100px]">
+            <div class="registration flex justify-center gap-[80px] p-[100px] px-[116px] text-[#D9D9D9]">
+                <div class="left flex flex-col gap-[32px] w-[566px]">
                     <h1 class="title">
                         Registration
                     </h1>
@@ -75,7 +76,7 @@
                     </p>
                 </div>
 
-                <div class="right">
+                <div class="right flex flex-col gap-[48px] w-[634px]">
                     <div class="registration_step">
                         <div class="title">
                             <span class="number">
@@ -126,37 +127,37 @@
                 </div>
             </div>
 
-            <div class="about">
-                <div class="title">
-                    <div class="left">
+            <div class="about flex flex-col gap-[48px] items-end justify-end px-[116px] text-[#D9D9D9]">
+                <div class="title relative flex items-end justify-between w-full pl-[233px]">
+                    <div class="left flex flex-col gap-[32px] w-[578px]">
                         <h1>New entertainment centre near Cheb</h1>
                         <p>We have been entertaining children and adults in western Bohemia for more than 10 years!</p>
                     </div>
                     <a href="" class="right">
                         Find more about us
-                        <img src="./images/small_arrow.svg" alt="">
+                        <img class="w-[24px] h-[24px]" src="./images/small_arrow.svg" alt="">
                     </a>
                 </div>
 
-                <div class="video">
-                    <img src="./images/video.png" alt=""></img>
-                    <button class="play_video">
-                        <img src="./images/play_button.svg" alt="">
+                <div class="video relative w-[1280px] h-[567px]">
+                    <img class="w-full h-full rounded-[24px] object-cover" src="./images/video.png" alt=""></img>
+                    <button class="play_video absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent border-0 cursor-pointer">
+                        <img class="w-[80px] h-[80px] rounded-[12px]" src="./images/play_button.svg" alt="">
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="activities">
-            <div class="heading">
+        <div class="activities flex flex-col gap-[48px] px-[116px] py-[100px]">
+            <div class="heading flex justify-between text-[#D9D9D9]">
                 <h1>OUR ATTRACTIONS</h1>
                 <p>
                     Multiple activities at Fun Arena Cheb 
-                    <img src="./images/arrow.png" alt="">
+                    <img class="w-[32px] h-[16px]" src="./images/arrow.png" alt="">
                 </p>
             </div>
-            <div class="content">
-                <div class="tabs">
+            <div class="content flex items-center gap-[40px]">
+                <div class="tabs flex flex-col gap-[12px] text-[#D9D9D9]">
                     <div class="activities_item item">
                         <img src="./images/activities1.png" alt="">
                         <p>kartarena</p>
@@ -190,8 +191,8 @@
         </div>
 
         <div class="gifting">
-            <img src="./images/gift.png" alt="">
-            <div class="text">
+            <img class="w-[220px] h-[220px] z-[5]" src="./images/gift.png" alt="">
+            <div class="text flex flex-col text-white gap-[2px] z-[5]">
                 <h1>Make somebody happy with a gift voucher</h1>
                 <p>
                     The voucher is valid for all services. Unforgettable experiences for children and adults!
@@ -200,22 +201,22 @@
             <button>Buy now</button>
         </div>
 
-        <div class="footer">
-            <div class="top">
+        <div class="footer flex flex-col gap-[24px] px-[116px] py-[80px] text-[#D9D9D9] w-full">
+            <div class="top flex items-center gap-[300px]">
                 <a href="">
-                    <img src="./images/logo_footer.png" alt="">
+                    <img class="w-[200px] h-[95px] object-contain" src="./images/logo_footer.png" alt="">
                 </a>
                 <p>
                     New entertainment centre FUN arena Cheb. You will find entertainment and sports activities for children and adults here.
                 </p>
-                <ul>
+                <ul class="list-none flex flex-col gap-[10px] items-end">
                     <li>Potočiště 3, 350 02 Odrava</li>
                     <li>fun@funarenacheb.cz</li>
                     <li>+420737878891</li>
                 </ul>
             </div>
-            <div class="bottom">
-                <div class="contact">
+            <div class="bottom flex justify-between">
+                <div class="contact bg-[#292929] flex items-center gap-[12px] rounded-[30px] px-[12px] py-[4px] h-fit">
                     <a href="">
                         <img src="./images/facebook.png" alt="">
                     </a>
@@ -230,10 +231,10 @@
                     </a>
                 </div>
 
-                <div class="copyright_and_onTopBtn">
+                <div class="copyright_and_onTopBtn flex gap-[48px] items-center">
                     <p>© 2025 FUN Arena Cheb. All rights Reserved.</p>
-                    <div class="button scrollToTopButton">
-                        <img src="./images/chervon.png" alt="">
+                    <div class="button scrollToTopButton border-0 bg-[#292929] rounded-full cursor-pointer transition duration-200 w-[40px] h-[40px] flex items-center justify-center">
+                        <img class="w-[12px] h-[6px]" src="./images/chervon.png" alt="">
                     </div>
                 </div>
             </div>
